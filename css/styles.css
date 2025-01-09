@@ -129,42 +129,97 @@ body {
 
 }
 /* tampilan handphone */
+/* Mobile Phones (<= 480px) */
 @media (max-width: 480px) {
     html {
-        font-size: 50%;
-
+        font-size: 50%; /* Skala font lebih kecil */
     }
+
+    .navbar {
+        padding: 1rem 5%; /* Kurangi padding navbar */
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.8rem; /* Ukuran font navbar-brand lebih kecil */
+    }
+
     #menu {
-        display: inline-block;
+        font-size: 2rem; /* Ukuran tombol hamburger */
     }
+
     .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background-color: white;
-        width: 10rem;
-        height: 100vh;
-        transition: 0.3s;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
     }
-    .navbar .navbar-nav.active {
-        right: 0;
-    }
+
     .navbar .navbar-nav a {
-        padding: 0.5rem;
-        margin: 1.2rem;
-        display: block;
-        font-size: 1.1rem;
-        color: var(--bg);
-    }
-    .navbar .navbar-nav a::after {
-        transform-origin: 0 0;
-    }
-    .navbar .navbar-nav a:hover::after {
-        transform: scaleX(0.2);
+        font-size: 1.3rem; /* Ukuran font menu lebih kecil */
+        margin: 1rem 0;
     }
 
+    .hero {
+        background-size: cover;
+        background-position: center;
+    }
 
+    .hero .content {
+        padding: 1rem 5%; /* Kurangi padding konten hero */
+        text-align: center;
+    }
+
+    .hero .content h1 {
+        font-size: 2.2rem; /* Ukuran heading hero */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Ukuran paragraf hero */
+    }
+
+    .hero .content .cta {
+        font-size: 1.2rem; /* Ukuran tombol CTA */
+        padding: 0.8rem 2rem;
+    }
+
+    .about {
+        padding: 5rem 5% 2rem; /* Sesuaikan padding */
+    }
+
+    .about h2 {
+        font-size: 2.4rem; /* Ukuran heading bagian About */
+    }
+
+    .about .row {
+        flex-direction: column; /* Stack elemen secara vertikal */
+        align-items: center;
+    }
+
+    .about .row .image img {
+        width: 100%; /* Gambar penuh lebar layar */
+        height: auto; /* Menjaga proporsi gambar */
+    }
+
+    .about .row .content {
+        text-align: center;
+    }
+
+    .about .row .content h3 {
+        font-size: 1.4rem; /* Ukuran heading konten */
+    }
+
+    .about .row .content p {
+        font-size: 1.2rem; /* Ukuran paragraf konten */
+    }
+
+    .product h2 {
+        font-size: 2.4rem; /* Heading bagian Product */
+    }
+
+    .product p {
+        font-size: 1.1rem; /* Paragraf bagian Product */
+    }
 }
+
 
 .hero{
     
